@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOSTA — Akuntansi Persediaan & Pengeluaran Rumah Kost</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand"><span class="tag">K</span><div><b>KOSTA</b><small>Akuntansi Rumah Kost</small></div></div>
+  <nav>
+    <button data-tab="dashboard">🏠 Dashboard</button>
+    <button data-tab="persediaan">📦 Persediaan</button>
+    <button data-tab="stok">🔁 Mutasi Stok</button>
+    <button data-tab="pengeluaran">💸 Pengeluaran</button>
+    <button data-tab="laporan">📑 Laporan & Jurnal</button>
+  </nav>
+  <p class="mode" id="mode"></p>
+</aside>
+<main>
+  <header>
+    <div><h1>Sistem Akuntansi Persediaan & Pengeluaran Operasional</h1><p>Rumah Kost — metode rata-rata bergerak (moving average)</p></div>
+    <label class="period">Periode <input type="month" id="bulan"></label>
+  </header>
+  <div id="view"></div>
+</main>
+<dialog id="dlg"></dialog>
+<div id="toast"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
